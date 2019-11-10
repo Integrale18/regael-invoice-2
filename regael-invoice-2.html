@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  	<meta content="" name="keywords">
+  	<meta content="" name="description">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+
+
+		@media (max-width: 280px) {
+			#bg {
+				padding-top: 3px!important;
+				padding-bottom: 3px!important;
+				padding-left: 5px!important;
+				padding-right: 5px!important;
+			}
+
+			#con-1 {
+				padding-top: 20px!important;
+			}
+
+			#head {
+				width: 45%!important;
+			}
+
+			#detail ul {
+				font-size: 8px!important;
+			}
+
+
+
+			#table-1 th, #table-1 td {
+				font-size: 10px!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				font-size: 8px!important;
+			}
+		}
+		@media (max-width: 320px) {
+			#table-1 .row-2-col-1 ul {
+				margin-right: 50px!important;
+			}
+		}
+		@media (min-width: 280px) and (max-width: 480px) {
+			#bg {
+				padding-top: 5px!important;
+				padding-bottom: 5px!important;
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+			}
+
+			#con-1 {
+				padding-top: 40px!important;
+			}
+
+			#table-1 .row-2-col-1 ul {
+				margin-right: 90px!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				font-size: 10px!important;
+			}
+		}
+		@media (max-width: 480px) {
+			#head, #head img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#con-1 {
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+				padding-bottom: 10px!important;
+			}
+
+			#detail {
+				display: block!important;
+				text-align: left!important;
+				margin-top: 40px!important;
+			}
+			#detail ul {
+				display: inline-block!important;
+			}
+			#detail #list-2 {
+				margin-top: 0!important;
+				margin-left: 10px!important;
+				vertical-align: top!important;
+			}
+
+
+
+			#table-1 {
+				display: block!important;
+			}
+			
+
+
+			#invoice {
+			    display: block!important;
+			    margin-top: 30px!important;
+			}
+			#invoice h2 {
+				text-align: center!important;
+			}
+			#list {
+				text-align: center!important;
+				margin-left: auto!important;
+				margin-right: auto!important;
+			}
+			#list ul {
+				display: inline-block!important;
+				margin-top: 0!important;
+				margin-bottom: 0!important;
+				margin-left: 10px!important;
+				margin-right: 10px!important;
+				padding: 0!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				padding-top: 10px!important;
+				padding-right: 5px!important;
+				padding-bottom: 10px!important;
+				padding-left: 0!important;
+			}
+
+
+
+			#footer {
+				font-size: 7px!important;
+			}
+			#footer td {
+				display: block!important;
+			}
+
+			#company-id {
+				margin-top: 30px!important;
+			}			
+		}
+		@media (min-width: 480px) and (max-width: 560px) {
+			#bg {
+				padding-top: 5px!important;
+				padding-bottom: 5px!important;
+				padding-left: 20px!important;
+				padding-right: 20px!important;
+			}
+
+			#table-1 .row-2-col-1 ul {
+				margin-right: 100px!important;
+			}
+
+
+
+			#footer {
+				font-size: 8.2px!important;
+			}
+		}
+		@media (min-width: 560px) {
+			#table-1 .row-2-col-1 ul {
+				margin-right: 160px!important;
+			}
+		}
+	</style>
+</head>
+<body style="margin: 0; padding: 0;">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+
+
+		@media (max-width: 280px) {
+			#bg {
+				padding-top: 3px!important;
+				padding-bottom: 3px!important;
+				padding-left: 5px!important;
+				padding-right: 5px!important;
+			}
+
+			#con-1 {
+				padding-top: 20px!important;
+			}
+
+			#head {
+				width: 45%!important;
+			}
+
+			#detail ul {
+				font-size: 8px!important;
+			}
+
+
+
+			#table-1 th, #table-1 td {
+				font-size: 10px!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				font-size: 8px!important;
+			}
+		}
+		@media (max-width: 320px) {
+			#table-1 .row-2-col-1 ul {
+				margin-right: 50px!important;
+			}
+		}
+		@media (min-width: 280px) and (max-width: 480px) {
+			#bg {
+				padding-top: 5px!important;
+				padding-bottom: 5px!important;
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+			}
+
+			#con-1 {
+				padding-top: 40px!important;
+			}
+
+			#table-1 .row-2-col-1 ul {
+				margin-right: 90px!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				font-size: 10px!important;
+			}
+		}
+		@media (max-width: 480px) {
+			#head, #head img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#con-1 {
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+				padding-bottom: 10px!important;
+			}
+
+			#detail {
+				display: block!important;
+				text-align: left!important;
+				margin-top: 40px!important;
+			}
+			#detail ul {
+				display: inline-block!important;
+			}
+			#detail #list-2 {
+				margin-top: 0!important;
+				margin-left: 10px!important;
+				vertical-align: top!important;
+			}
+
+
+
+			#table-1 {
+				display: block!important;
+			}
+			
+
+
+			#invoice {
+			    display: block!important;
+			    margin-top: 30px!important;
+			}
+			#invoice h2 {
+				text-align: center!important;
+			}
+			#list {
+				text-align: center!important;
+				margin-left: auto!important;
+				margin-right: auto!important;
+			}
+			#list ul {
+				display: inline-block!important;
+				margin-top: 0!important;
+				margin-bottom: 0!important;
+				margin-left: 10px!important;
+				margin-right: 10px!important;
+				padding: 0!important;
+			}
+
+
+
+			#table-2 th, #table-2 td {
+				padding-top: 10px!important;
+				padding-right: 5px!important;
+				padding-bottom: 10px!important;
+				padding-left: 0!important;
+			}
+
+
+
+			#footer {
+				font-size: 7px!important;
+			}
+			#footer td {
+				display: block!important;
+			}
+
+			#company-id {
+				margin-top: 30px!important;
+			}			
+		}
+		@media (min-width: 480px) and (max-width: 560px) {
+			#bg {
+				padding-top: 5px!important;
+				padding-bottom: 5px!important;
+				padding-left: 20px!important;
+				padding-right: 20px!important;
+			}
+
+			#table-1 .row-2-col-1 ul {
+				margin-right: 100px!important;
+			}
+
+
+
+			#footer {
+				font-size: 8.2px!important;
+			}
+		}
+		@media (min-width: 560px) {
+			#table-1 .row-2-col-1 ul {
+				margin-right: 160px!important;
+			}
+		}
+	</style>
+
+
+
+	<table id="bg" style="border-spacing: 0; width: 100%; background-color: #3f494b; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;">
+		<tr>
+			<td>
+
+				<table id="con-1" style="border-spacing: 0; width: auto; max-width: 600px; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; padding-top: 50px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px; background-color: #fff;">
+					<tr>
+						<td>
+
+							<table id="head-con" style="border-spacing: 0; width: 100%;">
+								<tr>
+									<td id="head" style="width: 125px;">
+										<img src="https://i.imgur.com/J7feDPf.png" style="width: 100%;">
+									</td>
+									<td id="detail" style="border-spacing: 0; font-family: Arial, Helvetica, sans-serif; text-align: right;">
+										<ul style="font-size: 10px; font-weight: 600; list-style: none; color: #909090; margin: 0; padding: 0;">
+											<li>The Regael Building</li>
+											<li>District</li>
+											<li>Country</li>
+											<li>Postcode</li>
+										</ul>
+										<ul id="list-2" style="margin-top: 10px; margin-right: 0; margin-bottom: 0; margin-left: 0; font-size: 10px; font-weight: 600; list-style: none; color: #909090; padding: 0;">
+											<li>0906 878 9444</li>
+											<li>sales@regael-inc.com</li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+
+							<table id="table-list" style="width: 100%; padding-top: 40px;">
+								<tr>
+									<td style="font-family: Arial, Helvetica, sans-serif; display: inline-block; padding-top: 4px;">
+										<table id="table-1" style="border-spacing: 0;">
+											<tr>
+												<th style="text-align: left; font-size: 11px; color: #002a63;">DELIVER TO</th>
+												<th style="text-align: left; font-size: 11px; color: #002a63;">INVOICE TO</th>
+											</tr>
+											<tr>
+												<td class="row-2-col-1" style="color: #696969; font-size: 11px;">
+													<ul style="margin: 0; padding: 0; list-style: none; padding-top: 7px; margin-right: 10px;">
+														<li style="margin-top: 5px; margin-left: 0;">Matt Jackson</li>
+														<li style="margin-top: 5px; margin-left: 0;">Acme Inc.</li>
+														<li style="margin-top: 5px; margin-left: 0;">1 Infinite Loop</li>
+														<li style="margin-top: 5px; margin-left: 0;">Cupertino</li>
+														<li style="margin-top: 5px; margin-left: 0;">CA 95014</li>
+														<li style="margin-top: 5px; margin-left: 0;">USA</li>
+													</ul>
+												</td>
+												<td style="color: #696969; font-size: 11px; padding-top: 7px;">
+													<ul style="margin: 0; padding: 0; list-style: none;">
+														<li style="margin-top: 5px; margin-left: 0;">Matt Jackson</li>
+														<li style="margin-top: 5px; margin-left: 0;">Acme Inc.</li>
+														<li style="margin-top: 5px; margin-left: 0;">1 Infinite Loop</li>
+														<li style="margin-top: 5px; margin-left: 0;">Cupertino</li>
+														<li style="margin-top: 5px; margin-left: 0;">CA 95014</li>
+														<li style="margin-top: 5px; margin-left: 0;">USA</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td id="invoice" style="text-align: right; font-family: Arial, Helvetica, sans-serif;">
+										<h2 style="font-size: 17px; font-weight: bold; text-align: right; color: #4d4d4d; margin: 0;">INVOICE</h2>
+										<table id="list" style="border-spacing: 0; margin-top: 10px; margin-bottom: 0; margin-left: auto; margin-right: 0;">
+											<tr>
+												<td>
+													<ul style="margin: 0; list-style: none;">
+														<li>
+															<h6 style="font-size: 11px; color: #002a63; margin: 0;">IVOICE NO</h6>
+														</li>
+														<li>
+															<p style="color: #696969; font-size: 10px; margin-top: 11px; margin-bottom: 22px; margin-left: 0; margin-right: 0;">#22018</p>
+														</li>
+													</ul>
+													<ul style="margin: 0; list-style: none;">
+														<li>
+															<h6 style="font-size: 11px; color: #002a63; margin: 0;">INVOICE DATE</h6>
+														</li>
+														<li>
+															<p style="color: #696969; font-size: 10px; margin-top: 11px; margin-bottom: 22px; margin-left: 0; margin-right: 0;">2018-02-01</p>
+														</li>
+													</ul>
+													<ul style="margin: 0; list-style: none;">
+														<li>
+															<h6 style="font-size: 11px; color: #002a63; margin: 0;">CUSTOMER VAT NO</h6>
+														</li>
+														<li>
+															<p style="color: #696969; font-size: 10px; margin-top: 11px; margin-bottom: 22px; margin-left: 0; margin-right: 0;">123456789</p>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td id="contact"  style="margin-top: 15px; margin-bottom: 15px; margin-left: 0; margin-right: 0; padding-left: 2px;">
+										<p style="font-size: 11px; color: #696969; margin-top: 0; margin-bottom: 5px; margin-left: 0; margin-right: 0;"><img src="https://i.imgur.com/9tvTS5U.png" style="width: 10px;"> matt@acme.inc</p>
+										<p style="font-size: 11px; color: #696969; margin-top: 0; margin-bottom: 5px; margin-left: 0; margin-right: 0;"><img src="https://i.imgur.com/XJ7GiXg.png" style="width: 8px;"> 0906-834-5455</p>
+									</td>
+								</tr>
+							</table>
+
+							<table id="table-2" style="border-top: 1px solid #eeeeee; width: 100%; text-align: left; font-family: Arial, Helvetica, sans-serif; border-spacing: 0; padding-top: 10px; margin-bottom: 50px;">
+								<tr>
+									<th style="width: 310px; font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">ITEM</th>
+									<th style="font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">MODEL #</th>
+									<th style="font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">QTY</th>
+									<th style="font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">PRICE</th>
+									<th style="padding-top: 0; padding-bottom: 0; padding-left: 10px; padding-right: 0; font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 0; text-align: right;">TOTAL</th>
+								</tr>
+								<tr>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">ME-Com Button Compass</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">R6010EX</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">3</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">$2.76</td>
+									<td class="text-right" style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 0; padding-bottom: 10px; padding-left: 10px; text-align: right;">$8.28</td>
+								</tr>
+								<tr>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">Kombat UK Commado Field Stove</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">PSPROLR177</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">1</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">$13.74</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 0; padding-bottom: 10px; padding-left: 10px; text-align: right;">$13.74</td>
+								</tr>
+								<tr>
+									<td style="font-size: 11px; color: #696969; border-bottom: 0; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">Kombat UK Alloy Mug</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">PSSP177</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">2</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;">$2.06</td>
+									<td style="font-size: 11px; color: #696969; border-bottom: 2px solid #eeeeee; padding-top: 10px; padding-right: 0; padding-bottom: 10px; padding-left: 10px; text-align: right;">$5.90</td>
+								</tr>
+								<tr>
+									<td style="border-bottom: 0;font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<th style="border-bottom: 1px solid #eeeeee; font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">SHIPPING</th>
+									<td style="border-bottom: 1px solid #eeeeee;font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<td style="border-bottom: 1px solid #eeeeee;font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<td style="border-bottom: 1px solid #eeeeee; font-size: 11px; color: #696969; padding-top: 10px; padding-right: 0; padding-bottom: 10px; padding-left: 10px; text-align: right;">$4.00</td>
+								</tr>
+								<tr>
+									<td style="border-bottom: 0;font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<th style="border-bottom: 2px solid #002a63; font-size: 11px; color: #4d4d4d; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">TAX</th>
+									<td style="border-color: #002a63;font-size: 11px; color: #696969; border-bottom: 2px solid #002a63; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<td style="border-color: #002a63;font-size: 11px; color: #696969; border-bottom: 2px solid #002a63; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<td style="border-color: #002a63; font-size: 11px; color: #696969; border-bottom: 2px solid #002a63; padding-top: 10px; padding-right: 0; padding-bottom: 10px; padding-left: 10px; text-align: right;">$6.38</td>
+								</tr>
+								<tr>
+									<td style="border-bottom: 0; font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<th style="border-bottom: 0; color: #002a63; font-size: 11px; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 20px;">TOTAL</th>
+									<td style="border-bottom: 0; font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<td style="border-bottom: 0; font-size: 11px; color: #696969; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 0;"></td>
+									<th style="border-bottom: 0; font-size: 11px; color: #002a63; padding-right: 0; text-align: right;">$38.30</th>
+								</tr>
+							</table>
+
+							<table style="border-spacing: 0; width: 50px; height: 2px; background-color: #002a63;">
+								<tr>
+									<td></td>
+								</tr>
+							</table>
+
+							<table id="footer" style="border-spacing: 0; color: #696969; font-size: 9.7px; width: 100%; border-spacing: 0;">
+								<tr>
+									<td>
+										<ul style="margin: 0; padding-top: 5px; padding-bottom: 0; padding-left: 0; padding-right: 0; list-style: none;">
+											<li style="margin-top: 3px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
+												Please make payment to the following UK Ltd bank account
+											</li>
+											<li style="margin-top: 3px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
+												Account Name <span class="bold" style="font-weight: bold;">Regael Ltd</span>
+											</li>
+											<li style="margin-top: 3px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
+												Sort Code: <span class="bold" style="font-weight: bold;">10-11-12</span> <span class="blue bold" style="color: #002a63;">*</span>Account Number <span class="bold" style="font-weight: bold;">12345678</span>
+											</li>
+											<li style="margin-top: 3px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
+												SWFTBIC BUKABCgg <span class="blue bold" style="font-weight: bold; color: #002a63;">*</span> IBAN GBos BUNB 1234 1234 1234 #7 
+											</li>
+										</ul>
+									</td>
+									<td id="company-id" style="text-align: right; vertical-align: bottom;">
+										Uk Ltd Company VAT No: 12345678
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
